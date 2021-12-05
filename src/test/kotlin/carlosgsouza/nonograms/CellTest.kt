@@ -1,5 +1,6 @@
-package carlosgsouza.nonograms.carlosgsouza.nonograms
+package carlosgsouza.nonograms
 
+import carlosgsouza.nonograms.carlosgsouza.nonograms.Cell
 import com.natpryce.hamkrest.assertion.assertThat
 import com.natpryce.hamkrest.equalTo
 import org.junit.jupiter.api.Assertions.*
