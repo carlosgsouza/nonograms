@@ -1,9 +1,9 @@
 package carlosgsouza.nonograms
 
 import org.junit.jupiter.api.Assertions.*
-import kotlin.test.Test
+import org.junit.jupiter.api.Test
 
-internal class RowTest {
+internal class LineTest {
     @Test
     fun testInitialization() {
 
