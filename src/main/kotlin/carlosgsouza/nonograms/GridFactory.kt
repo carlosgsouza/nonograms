@@ -1,7 +1,5 @@
 package carlosgsouza.nonograms
 
-import carlosgsouza.nonograms.carlosgsouza.nonograms.Cell
-
 class GridFactory {
 
     /**

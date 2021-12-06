@@ -1,9 +1,7 @@
-package carlosgsouza.nonograms.carlosgsouza.nonograms
+package carlosgsouza.nonograms
 
-import carlosgsouza.nonograms.Grid
-import carlosgsouza.nonograms.Line
-import carlosgsouza.nonograms.carlosgsouza.nonograms.Cell.BLANK
-import carlosgsouza.nonograms.carlosgsouza.nonograms.Cell.FILLED
+import carlosgsouza.nonograms.Cell.BLANK
+import carlosgsouza.nonograms.Cell.FILLED
 
 class GridPrinter {
     fun toString(grid: Grid) : String {

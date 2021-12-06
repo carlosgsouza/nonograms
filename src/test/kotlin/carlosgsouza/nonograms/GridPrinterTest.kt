@@ -1,8 +1,5 @@
 package carlosgsouza.nonograms
 
-import carlosgsouza.nonograms.carlosgsouza.nonograms.Cell
-import carlosgsouza.nonograms.carlosgsouza.nonograms.GridPrinter
-import com.natpryce.hamkrest.allElements
 import com.natpryce.hamkrest.assertion.assertThat
 import com.natpryce.hamkrest.equalTo
 import org.junit.jupiter.api.Test

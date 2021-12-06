@@ -1,6 +1,5 @@
 package carlosgsouza.nonograms
 
-import carlosgsouza.nonograms.carlosgsouza.nonograms.Cell
 import com.natpryce.hamkrest.allElements
 import com.natpryce.hamkrest.assertion.assertThat
 import com.natpryce.hamkrest.equalTo

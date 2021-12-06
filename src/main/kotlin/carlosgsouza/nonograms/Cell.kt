@@ -1,4 +1,4 @@
-package carlosgsouza.nonograms.carlosgsouza.nonograms
+package carlosgsouza.nonograms
 
 enum class Cell(val character: String) {
     UNKNOWN("?"), BLANK("_"), FILLED("x");

@@ -1,7 +1,5 @@
 package carlosgsouza.nonograms
 
-import carlosgsouza.nonograms.carlosgsouza.nonograms.Cell
-
 class Grid(
     val size: Int,
     val rowHints: List<List<Int>>,

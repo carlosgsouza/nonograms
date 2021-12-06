@@ -1,8 +1,7 @@
 package carlosgsouza.nonograms
 
-import carlosgsouza.nonograms.carlosgsouza.nonograms.Cell
-import carlosgsouza.nonograms.carlosgsouza.nonograms.Cell.BLANK
-import carlosgsouza.nonograms.carlosgsouza.nonograms.Cell.FILLED
+import carlosgsouza.nonograms.Cell.BLANK
+import carlosgsouza.nonograms.Cell.FILLED
 
 /**
  * A line is a view of the Grid that corresponds to either a row or a column.
