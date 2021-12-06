@@ -66,47 +66,6 @@ class Line(val grid: Grid, val lineType: LineType, val lineIndex: Int) : Iterabl
     val hints: List<Int>
         get() = if(lineType == LineType.ROW) grid.rowHints[lineIndex] else grid.columnHints[lineIndex]
 
-    /**
-     * TODO: Move this somewhere else and keep this as a data class.
-     */
-    fun solve(): Line {
-        fillFromCenter()
-        fillCompleteLine()
-
-        return this
-    }
-
-    private fun fillFromCenter() {
-        if (hints.size != 1) return
-
-        val sequenceLength = hints[0]
-        if (sequenceLength <= grid.size / 2) return
-
-        val totalLength = grid.size
-
-        for (i in (totalLength - sequenceLength) until sequenceLength) {
-            this[i] = FILLED
-        }
-    }
-
-    private fun fillCompleteLine() {
-        val separatorCount = hints.size - 1
-        val filledCount = hints.sum()
-
-        if(separatorCount + filledCount < grid.size) return
-
-        var current = 0
-        for(cellCount in hints) {
-            repeat(cellCount) {
-                this[current++] = FILLED
-            }
-            // If we reached the end of the line, we do not need to set the next cell to blank.
-            if(current < grid.size) {
-                this[current++] = BLANK
-            }
-        }
-    }
-
     override fun toString(): String {
         return """${hints.joinToString(" ")} | ${this.joinToString(" ")}"""
     }
